@@ -51,7 +51,7 @@ function launch
         echo Initialization complete...
         exit 0
     else
-    cd /content/KoboldAI-Client
+    cd /content/KoboldAI-Client-w--Galactica
     echo "Launching KoboldAI with the following options : python3 aiserver.py$model$kmpath$configname$ngrok$localtunnel$savemodel --colab"
     python3 aiserver.py$model$kmpath$configname$ngrok$localtunnel$savemodel --colab
     exit
@@ -136,7 +136,7 @@ if [ "$init" != "skip" ]; then
         git reset --hard origin/$(git_default_branch)
     fi
 
-    cd /content/KoboldAI-Client
+    cd /content/KoboldAI-Client-w--Galactica
 
     cp -rn stories/* /content/drive/MyDrive/KoboldAI/stories/
     cp -rn userscripts/* /content/drive/MyDrive/KoboldAI/userscripts/

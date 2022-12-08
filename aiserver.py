@@ -124,6 +124,7 @@ model_menu = {
         ["Novel Models", "novellist", "", True],
         ["NSFW Models", "nsfwlist", "", True],
         ["Untuned OPT", "optlist", "", True],
+	["Untuned Galactica", "galacticalist", "", True],
         ["Untuned GPT-Neo/J", "gptneolist", "", True],
         ["Untuned Pythia", "pythialist", "", True],
         ["Untuned Fairseq Dense", "fsdlist", "", True],
@@ -234,6 +235,13 @@ model_menu = {
         ["OPT 1.3B", "facebook/opt-1.3b", "4GB", False],
         ["OPT 350M", "facebook/opt-350m", "2GB", False],
         ["OPT 125M", "facebook/opt-125m", "1GB", False],
+        ["Return to Main Menu", "mainmenu", "", True],
+        ],
+    'galacticalist': [
+        ["Galactica 30B", "facebook/galactica-30b", "64GB", False],
+        ["Galactica 6.7B", "facebook/galactica-6.7b", "16GB", False],
+        ["Galactica 1.3B", "facebook/galactica-1.3b", "4GB", False],
+        ["Galactica 125M", "facebook/galactica-125m", "1GB", False],
         ["Return to Main Menu", "mainmenu", "", True],
         ],
     'fsdlist': [

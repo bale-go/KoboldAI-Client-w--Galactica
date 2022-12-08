@@ -108,20 +108,20 @@ if [ "$init" != "skip" ]; then
     cd /content
     if [ ! -z ${git+x} ]; then
         if [ "$git" == "Official" ]; then
-            git=https://github.com/bale-go/KoboldAI-Client
+            git=https://github.com/bale-go/KoboldAI-Client-w--Galactica
         fi
         if [ "$git" == "United" ]; then
-            git=https://github.com/bale-go/KoboldAI-Client
+            git=https://github.com/bale-go/KoboldAI-Client-w--Galactica
         fi
         if [ "$git" == "united" ]; then
-            git=https://github.com/bale-go/KoboldAI-Client
+            git=https://github.com/bale-go/KoboldAI-Client-w--Galactica
         fi
     else
-        git=https://github.com/bale-go/KoboldAI-Client
+        git=https://github.com/bale-go/KoboldAI-Client-w--Galactica
     fi
 
-    mkdir /content/KoboldAI-Client
-    cd /content/KoboldAI-Client
+    mkdir /content/KoboldAI-Client-w--Galactica
+    cd /content/KoboldAI-Client-w--Galactica
 
     git init
     git remote remove origin

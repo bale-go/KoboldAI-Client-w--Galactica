@@ -1462,7 +1462,7 @@ def general_startup(override_args=None):
             vars.model = "NeoCustom"
             vars.custmodpth = modpath
     elif args.model:
-        logger.message(f"Welcome to KoboldAI!")
+        logger.message(f"Welcome to KoboldAI-galactica!")
         logger.message(f"You have selected the following Model: {vars.model}")
         if args.path:
             logger.message(f"You have selected the following path for your Model: {args.path}")

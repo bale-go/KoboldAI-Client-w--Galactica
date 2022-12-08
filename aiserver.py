@@ -2335,9 +2335,10 @@ def load_model(use_gpu=True, gpu_layers=None, disk_layers=None, initial_load=Fal
             # Lazy loader
             import torch_lazy_loader
             def get_lazy_load_callback(n_layers, convert_to_float16=True):
+		print(vars.lazy_load)
                 if not vars.lazy_load:
                     return
-
+                print("yet!")
                 from tqdm.auto import tqdm
 
                 global breakmodel

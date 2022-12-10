@@ -831,7 +831,7 @@ def infer_dynamic(
     use_callback=True,
 ) -> Tuple[List[np.array], int, bool, bool]:
     assert excluded_world_info is not None
-    #maps.thread_resources.env = thread_resources_env
+    maps.thread_resources.env = thread_resources_env
     total_batch = 1
     tokens = context
     if(soft_tokens is not None):
@@ -871,7 +871,7 @@ def infer_static(
     soft_tokens: Optional[np.array] = None,
     sampler_order: Optional[List[int]] = None,
 ) -> List[np.array]:
-    #maps.thread_resources.env = thread_resources_env
+    maps.thread_resources.env = thread_resources_env
     if sampler_order is None:
         sampler_order = utils.default_sampler_order.copy()
     sampler_order = sampler_order[:]
@@ -1193,7 +1193,7 @@ def load_model(path: str, driver_version="tpu_driver0.1_dev20210607", hf_checkpo
     mesh_shape = (1, cores_per_replica)
     devices = np.array(jax.devices()[:cores_per_replica]).reshape(mesh_shape)
     thread_resources_env = maps.ResourceEnv(maps.Mesh(devices, ('dp', 'mp')), ())
-    #maps.thread_resources.env = thread_resources_env
+    maps.thread_resources.env = thread_resources_env
 
     global shard_xmap, batch_xmap
     shard_xmap = __shard_xmap()

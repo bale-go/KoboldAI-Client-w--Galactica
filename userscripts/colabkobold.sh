@@ -53,7 +53,7 @@ function launch
     else
     cd /content/KoboldAI-Client-w--Galactica
     echo "Launching KoboldAI with the following options : python3 aiserver.py$model$kmpath$configname$ngrok$localtunnel$savemodel --lowmem --colab"
-    python3 aiserver.py$model$kmpath$configname$ngrok$localtunnel$savemodel --lowmem --colab
+    python3 aiserver.py$model$kmpath$configname$ngrok$localtunnel$savemodel --colab
     exit
     fi
 }
